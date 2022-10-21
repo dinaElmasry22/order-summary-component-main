@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Order summary card</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Montserrat&family=Nunito+Sans:wght@700;900&family=Open+Sans:wdth,wght@97.2,300;100,500&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&family=Rubik+Mono+One&display=swap');
+    body {
+      font-family: 'Red Hat Display', sans-serif;
+      background-image: url(./images/pattern-background-desktop.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: hsl(225, 100%, 94%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    main {
+      width: 450px;
+      background-color: white;
+      border-radius: 12px;
+    }
+    .info {
+      padding: 40px 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    .illustration-hero {
+      border-radius: 12px 12px 0 0;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    p {
+      color: hsl(224, 23%, 55%);
+      margin: 0px;
+      line-height: 25px;
+    }
+    .container {
+      width: 100%;
+      height: 90px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 12px;
+      background-color: hsl(225, 100%, 98%);
+      box-sizing: border-box;
+    }
+    .annual-plan {
+      display: flex;
+      width: 45%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    button {
+      border: none;
+      width: 100%;
+      background-color: hsl(245, 75%, 52%);
+      height: 50px;
+      border-radius: 12px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer; 
+      box-shadow: 0px 25px 15px 1px hsl(225, 100%, 94%);
+      font-weight: bold;
+      transition-duration: 0.5s;
+
+    }
+    button:hover {
+      background-color: hsl(245, 75%, 65%);
+    }
+    .text {
+      font-weight: bold;
+      color: #000;
+      margin: 7px;
+    }
+    .change {
+      color: hsl(245, 75%, 52%);
+      font-weight: bold;
+      font-size: 14px;
+      transition-duration: 0.5s;
+
+    }
+    .change:hover {
+      color: hsl(245, 75%, 65%);
+    }
+    .cancel {
+      color: hsl(224, 23%, 55%);
+      text-decoration: none;
+      font-weight: bolder;
+      transition-duration: 0.5s;
+
+    }
+    .cancel:hover {
+      color: hsl(223, 47%, 23%);
+    }
+
+    @media (max-width:350px) {
+      main {
+        max-width: 90%;
+      }
+      
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <img src="./images/illustration-hero.svg" class="illustration-hero" alt="photo">
+    
+    <div class="info">
+      <h1>Order Summary</h1>
+    <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+    <div class="container">
+      <div class="annual-plan">
+        <img src="./images/icon-music.svg" class="icon-music" alt="photo">
+        <div>
+          <p class="text">Annual Plan</p>
+          <p>$59.99/year</p>
+        </div>
+      </div>
+        <a href="https://www.google.com/" class="change">Change</a>
+      </div>
+      <button>Proceed to Payment</button>
+      <a href="https://www.google.com/" class="cancel">Cancel Order</a>
+    </div>
+    
+  </main>
+</body>
+
+</html>
